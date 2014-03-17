@@ -22,6 +22,7 @@ jQuery(document).ready(function($) {
 		div.innerHTML = privacyMessage;	
 		bodytag.appendChild(div);
 		document.getElementsByTagName('body')[0].className+=' cookiebanner';	
+		createCookie(window.cookieName,window.cookieValue, window.cookieDuration);
 	}
 	
 	function createCookie(name,value,days) {
